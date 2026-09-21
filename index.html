@@ -609,6 +609,14 @@ html,body{opacity:1!important;visibility:visible!important}
 </div>
 </section>
 <script>(function(){var mq=window.matchMedia("(max-width:1024px)");var cards=document.querySelectorAll("#feedbacks .aa-fb-card");function setup(){cards.forEach(function(card){var body=card.querySelector(".aa-fb-body"),btn=card.querySelector(".aa-fb-more");if(!body)return;if(!btn){btn=document.createElement("button");btn.type="button";btn.className="aa-fb-more";btn.textContent="Ler mais";btn.setAttribute("aria-expanded","false");body.insertAdjacentElement("afterend",btn);btn.addEventListener("click",function(){var open=body.classList.toggle("is-clamped")===false;btn.textContent=open?"Ler menos":"Ler mais";btn.setAttribute("aria-expanded",open?"true":"false");});}body.classList.remove("is-clamped");btn.classList.remove("is-on");btn.textContent="Ler mais";btn.setAttribute("aria-expanded","false");if(mq.matches){body.classList.add("is-clamped");if(body.scrollHeight>body.clientHeight+4){btn.classList.add("is-on");}else{body.classList.remove("is-clamped");}}});}setup();if(mq.addEventListener)mq.addEventListener("change",setup);else mq.addListener(setup);})();</script>
+<style>
+#faq .e-n-accordion{display:flex;flex-direction:column;gap:10px;}
+#faq .e-n-accordion-item{border-radius:12px;overflow:hidden;margin:0 !important;background:#FFFDF9 !important;}
+#faq .e-n-accordion-item-title{border-radius:0 !important;}
+#faq .e-n-accordion-item [role="region"]{display:flex !important;flex-direction:column;box-sizing:border-box;width:100%;background:#EEF6F6 !important;padding:16px 20px 20px !important;}
+#faq .e-n-accordion-item [role="region"] p{padding:0 !important;margin:0 !important;font-family:Raleway,sans-serif !important;font-size:1rem !important;line-height:1.55 !important;color:#1F2124 !important;}
+@media(max-width:767px){#faq .e-n-accordion{gap:8px;}#faq .e-n-accordion-item [role="region"]{padding:14px 16px 18px !important;}}
+</style>
 <section class="elementor-element elementor-element-b2d68c1 e-con e-atomic-element e-flexbox-base e-b2d68c1-9e90784" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="b2d68c1" data-interaction-id="b2d68c1" id="faq">
 <div class="elementor-element elementor-element-e5ba5eb e-con e-atomic-element e-flexbox-base e-e5ba5eb-8e4fc63" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="e5ba5eb" data-interaction-id="e5ba5eb">
 <div class="elementor-element elementor-element-09e7168 e-con e-atomic-element e-flexbox-base e-09e7168-9c3a78f atomik-entrada-18" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="09e7168" data-interaction-id="09e7168">
