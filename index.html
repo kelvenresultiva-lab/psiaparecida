@@ -489,38 +489,68 @@ html,body{opacity:1!important;visibility:visible!important}
 }
 .e-2020a84-a920dc2{display:none !important;}
 .tf-format-wrap{max-width:1280px;margin:0 auto;padding:80px 20px 80px;}
-.tf-format-grid{display:grid;grid-template-columns:1fr;gap:24px;}
-.tf-format-card{border-radius:15px;padding:48px 40px;}
+.tf-format-head{display:flex;flex-direction:column;align-items:center;margin-bottom:48px;}
+.tf-format-head .tf-format-eyebrow{color:#311507;margin:0 0 20px;}
+.tf-format-head .tf-format-h2{font-family:'IvyPresto Display','ivypresto-display',serif;font-weight:300 !important;font-size:3.438rem !important;line-height:60px !important;text-align:center;color:#0c0c0c;margin:0;}
+.tf-format-head .tf-format-h2 em{font-style:normal;color:#1F4D49;}
+.tf-format-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:stretch;}
+.tf-format-card{border-radius:15px;padding:56px 56px;display:flex;flex-direction:column;justify-content:center;}
+.tf-format-light{background:#F0E0C7;border:1px solid #0000000d;}
 .tf-format-dark{background:#2F6F6A;}
 .tf-format-eyebrow{display:flex;align-items:center;gap:10px;font-family:'Raleway',sans-serif;font-weight:600;font-size:14px;letter-spacing:0.17em;text-transform:uppercase;margin:0 0 16px;}
 .tf-format-bar{width:3px;height:14px;display:inline-block;background:#C08A5C;flex-shrink:0;}
+.tf-format-light .tf-format-eyebrow{color:#311507;}
 .tf-format-dark .tf-format-eyebrow{color:#F0E0C7;}
-.tf-format-title{font-family:'ivypresto-display',serif;font-weight:400 !important;font-style:normal !important;font-size:2.375rem;line-height:108%;margin:0 0 14px;text-align:start;letter-spacing:0em;}
+.tf-format-title{font-family:'ivypresto-display',serif;font-weight:400 !important;font-style:normal !important;font-size:2.375rem;line-height:108%;margin:0 0 18px;text-align:start;letter-spacing:0em;}
+.tf-format-light .tf-format-title{color:#311507;}
 .tf-format-dark .tf-format-title{color:#F0E0C7;}
-.tf-format-desc{font-family:'Raleway',sans-serif;font-size:1.125rem;line-height:120%;margin:0;}
+.tf-format-desc{font-family:'Raleway',sans-serif;font-size:1.125rem;line-height:1.35;margin:0;}
 .tf-format-desc strong{font-weight:700;}
+.tf-format-light .tf-format-desc{color:#0c0c0c;}
 .tf-format-dark .tf-format-desc{color:#FFFFFF;}
+.tf-format-dark .tf-format-desc strong{color:#F0E0C7;}
+.tf-format-addr{display:flex;align-items:flex-start;gap:12px;margin-top:22px;padding-top:20px;border-top:1px solid #F0E0C74d;font-family:'Raleway',sans-serif;font-size:1.0625rem;line-height:1.4;color:#FFFFFF;font-style:normal;}
+.tf-format-addr svg{flex-shrink:0;margin-top:2px;color:#F0E0C7;}
+.tf-format-addr strong{display:block;color:#F0E0C7;font-weight:700;margin-bottom:2px;}
 .tf-invest-wrap{margin-top:24px;}
-.tf-map-card{height:100%;position:relative;border-radius:15px;overflow:hidden;min-height:280px;}
+@media(min-width:1025px){
+.elementor-element-4e72be0{align-items:stretch !important;}
+.elementor-element-01bfca3{width:calc(50% - 10px) !important;max-width:calc(50% - 10px) !important;flex:0 0 calc(50% - 10px) !important;margin-block:0 !important;}
+.tf-map-col{width:calc(50% - 10px);max-width:calc(50% - 10px);flex:0 0 calc(50% - 10px);align-self:stretch;}
+}
+.tf-map-card{height:100%;position:relative;border-radius:15px;overflow:hidden;min-height:320px;}
+.tf-map-card iframe{border:0;width:100%;height:100%;min-height:320px;display:block;}
 .tf-map-caption{position:absolute;left:0;right:0;bottom:0;background:#2F6F6A;color:#F0E0C7;font-family:'Raleway',sans-serif;font-size:12px;text-align:center;padding:8px 12px;}
+@media(max-width:1024px){.tf-format-grid{grid-template-columns:1fr;}.tf-format-head .tf-format-h2{font-size:2.5rem !important;line-height:1.2em !important;}.tf-map-col{width:100%;}}
 @media(max-width:767px){
-.tf-format-wrap{padding:48px 20px 48px;display:flex;flex-direction:column;gap:16px;}
-.tf-format-grid{display:contents;}
+.tf-format-wrap{padding:48px 20px 48px;}
+.tf-format-head{margin-bottom:32px;}
+.tf-format-head .tf-format-h2{font-size:2rem !important;}
+.tf-format-grid{gap:16px;}
 .tf-format-card{padding:32px 24px;}
-.tf-format-card.tf-format-dark{order:1;}
-.tf-invest-wrap{order:2;margin-top:0;}
-.tf-map-card{order:3;min-height:220px;}
 .tf-format-title{font-size:1.75rem;}
 .tf-format-desc{font-size:1rem;}
+.tf-invest-wrap{margin-top:16px;}
+.tf-map-card,.tf-map-card iframe{min-height:240px;}
 }
 </style>
 <section id="formato-investimento">
 <div class="tf-format-wrap">
+<div class="tf-format-head">
+<p class="tf-format-eyebrow"><span class="tf-format-bar"></span>MODALIDADES</p>
+<h2 class="tf-format-h2">Modalidades de<br/><em>Atendimento</em></h2>
+</div>
 <div class="tf-format-grid">
+<div class="tf-format-card tf-format-light">
+<p class="tf-format-eyebrow"><span class="tf-format-bar"></span>FORMATO</p>
+<h3 class="tf-format-title">Atendimento Online:</h3>
+<p class="tf-format-desc">Sessões realizadas por <strong>vídeochamada em plataforma segura e sigilosa</strong>, voltadas principalmente para o atendimento de adultos que necessitam de flexibilidade de horários ou comodidade geográfica. (Atendimentos online para adolescentes mediante consulta prévia de viabilidade).</p>
+</div>
 <div class="tf-format-card tf-format-dark">
 <p class="tf-format-eyebrow"><span class="tf-format-bar"></span>FORMATO</p>
-<h3 class="tf-format-title">Formato de Atendimento:</h3>
-<p class="tf-format-desc">Psicoterapia com base na <strong>Terapia Cognitivo-Comportamental</strong>. <strong>[Definir: atendimento online, presencial ou ambos, com dias e horários]</strong></p>
+<h3 class="tf-format-title">Atendimento Presencial (Consultório):</h3>
+<p class="tf-format-desc">Se você busca atendimento com uma <strong>psicóloga em Arcos, MG</strong>, as consultas presenciais são a modalidade prioritária da clínica, voltadas para crianças, adolescentes e adultos. Realizadas em um consultório acolhedor, planejado para oferecer escuta reservada, espaço para os recursos lúdicos e máximo de conforto e segurança para cada momento de cuidado.</p>
+<address class="tf-format-addr"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><strong>Endereço do consultório</strong>Rua Cecília Lara Albuquerque, 11 - Centro<br/>Arcos - MG - CEP 35588-000</span></address>
 </div>
 </div>
 <div class="tf-invest-wrap">
@@ -540,7 +570,7 @@ html,body{opacity:1!important;visibility:visible!important}
 <p class="e-97bd11c-8db782b e-paragraph-base" data-e-type="widget" data-id="97bd11c" data-interaction-id="97bd11c">Consulte as condições para emissão de recibo para reembolso do seu plano de saúde.</p>
 </div>
 </div>
-
+<div class="tf-map-col"><div class="tf-map-card"><iframe aria-label="Localização do consultório em Arcos, MG" loading="lazy" src="https://maps.google.com/maps?q=Rua%20Cec%C3%ADlia%20Lara%20Albuquerque%2C%2011%2C%20Arcos%2C%20MG%2C%2035588-000&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near" title="Localização do consultório em Arcos, MG"></iframe></div></div>
 </div>
 </div>
 </div>
@@ -695,7 +725,7 @@ html,body{opacity:1!important;visibility:visible!important}
 </span>
 </summary>
 <div aria-labelledby="e-n-accordion-item-6512" class="elementor-element elementor-element-6b5a5fe e-con-full e-flex e-con e-child" data-e-type="container" data-element_type="container" data-id="6b5a5fe" data-settings='{"background_background":"classic"}' role="region">
-<p class="e-9a8a0f2-2e0904a e-paragraph-base" data-e-type="widget" data-id="9a8a0f2" data-interaction-id="9a8a0f2">[Definir o formato de atendimento: presencial, online ou ambos.] Entre em contato pelo WhatsApp para alinharmos o melhor formato para você.</p>
+<p class="e-9a8a0f2-2e0904a e-paragraph-base" data-e-type="widget" data-id="9a8a0f2" data-interaction-id="9a8a0f2">Sim. Os atendimentos podem ser presenciais, no consultório em Arcos - MG (Rua Cecília Lara Albuquerque, 11 - Centro), ou online, por vídeochamada. Entre em contato pelo WhatsApp para alinharmos o melhor formato para você.</p>
 </div>
 </details>
 <details class="e-n-accordion-item" id="e-n-accordion-item-6513">
