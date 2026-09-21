@@ -384,6 +384,12 @@ html,body{opacity:1!important;visibility:visible!important}
 .tf-steps-why{margin-top:40px;padding-top:32px;border-top:1px solid #F0E0C74d;}
 .tf-steps-why-title{font-family:'IvyPresto Display',serif;font-weight:400;font-size:1.75rem;color:#F0E0C7;margin:0 0 12px;}
 .tf-steps-why-text{font-family:'Raleway',sans-serif;font-size:16px;line-height:1.6;color:#FFFFFF;margin:0;}
+.tf-steps-why{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:48px;align-items:center;}
+.tf-steps-why-copy{max-width:640px;}
+.tf-steps-why-copy .tf-steps-why-title{margin:0 0 12px;}
+.tf-steps-why-cta{justify-self:end;display:inline-flex;align-items:center;justify-content:center;gap:12px;width:380px;height:62px;border-radius:15px;background:#FFFFFF;color:#1F4D49;font-family:Raleway,sans-serif;font-weight:700;font-size:16px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.15);transition:transform .2s;}
+.tf-steps-why-cta:hover{transform:translateY(-2px);}
+@media(max-width:767px){.tf-steps-why{grid-template-columns:1fr;row-gap:24px;}.tf-steps-why-copy{max-width:none;}.tf-steps-why-cta{width:100%;max-width:380px;justify-self:center;}}
 </style>
 <div class="elementor-element elementor-element-6a921a3 e-con e-atomic-element e-flexbox-base e-6a921a3-f593e87" data-e-type="e-flexbox" data-element_type="e-flexbox" data-id="6a921a3" data-interaction-id="6a921a3">
 <div class="tf-steps-steps">
@@ -409,8 +415,11 @@ html,body{opacity:1!important;visibility:visible!important}
 </div>
 </div>
 <div class="tf-steps-why">
+<div class="tf-steps-why-copy">
 <p class="tf-steps-why-title">Por que escolher a TCC?</p>
 <p class="tf-steps-why-text">Uma abordagem objetiva, com foco no presente e em metas claras, que oferece ferramentas práticas para você aplicar dentro e fora das sessões. Agende sua conversa e dê o primeiro passo.</p>
+</div>
+<a class="tf-steps-why-cta" href="https://api.whatsapp.com/send?phone=5537999071110&amp;text=Ol%C3%A1!%20Em%20que%20posso%20te%20ajudar%3F%20" target="_blank">Agendar uma conversa <svg fill="none" height="16" viewbox="0 0 20 20" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="#1F4D49" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.66667"></path></svg></a>
 </div>
 </div>
 </section>
