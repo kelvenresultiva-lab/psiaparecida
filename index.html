@@ -639,9 +639,9 @@ html,body{opacity:1!important;visibility:visible!important}
 .aa-office-intro{font-family:Raleway,sans-serif;font-size:1.25rem;line-height:1.5;text-align:center;color:#0c0c0c;max-width:640px;margin:0 auto 48px;}
 .aa-office-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .aa-office-grid img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;box-shadow:0 8px 30px rgba(31,77,73,.08);display:block;}
-@media(max-width:900px){.aa-office-grid{grid-template-columns:1fr 1fr;}.aa-office-grid img:first-child{grid-column:1/3;aspect-ratio:16/10;}}
 @media(max-width:1024px){.aa-office{padding:64px 20px;}.aa-office-title{font-size:2.25rem;}.aa-office-intro{font-size:1rem;margin-bottom:28px;}}
-@media(max-width:767px){.aa-office{padding:48px 20px;}.aa-office-title{font-size:2rem;}.aa-office-grid{grid-template-columns:1fr;gap:14px;}.aa-office-grid img:first-child{grid-column:auto;aspect-ratio:4/5;}}
+@media(max-width:900px){.aa-office-grid{display:flex;grid-template-columns:none;align-items:stretch;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;margin-inline:-20px;padding-inline:20px;scroll-padding-inline:20px;-webkit-overflow-scrolling:touch;}.aa-office-grid::-webkit-scrollbar{height:8px;}.aa-office-grid::-webkit-scrollbar-thumb{background:#54A8AC55;border-radius:4px;}.aa-office-grid img{flex:0 0 78%;max-width:340px;scroll-snap-align:start;aspect-ratio:4/5;}}
+@media(max-width:767px){.aa-office{padding:48px 20px;}.aa-office-title{font-size:2rem;}.aa-office-grid img{flex-basis:84%;}}
 </style>
 <section class="aa-office" id="consultorio">
 <div class="aa-office-wrap">
